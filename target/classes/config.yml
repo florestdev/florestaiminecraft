@@ -1,0 +1,9 @@
+# WE ARE USING SAMBANOVA. URL: https://cloud.sambanova.ai/dashboard
+
+model: "DeepSeek-V3-0324"
+api_key: ""
+delay_between_commands: 0
+
+format: "AI: {message}"
+max_tokens: 1000
+format_of_errors: "Error: {message}"

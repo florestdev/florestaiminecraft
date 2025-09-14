@@ -1,0 +1,22 @@
+name: FlorestAI
+version: '1.0'
+main: ru.florestdev.florestGigaChat.FlorestGigaChat
+api-version: '1.21'
+prefix: FlorestAI
+load: STARTUP
+authors: [ FlorestDev ]
+description: This is a plugin for the GigaChat connection.
+commands:
+  florestai:
+    aliases:
+      - florestai
+      - fai
+      - ai
+      - fgc
+    description: Main command of the plugin
+    permission-message: You haven't got the florestgigachat.use permission!
+    permission: florestai.use
+permissions:
+  florestai:
+    default: op
+    description: Главное разрешение плагина.
