@@ -7,3 +7,5 @@ delay_between_commands: 0
 format: "AI: {message}"
 max_tokens: 1000
 format_of_errors: "Error: {message}"
+
+system_message: "You are a helpful assistant" # you can write your prompt for all users' requests.
