@@ -65,12 +65,12 @@ final class GigaChatOkClient {
         JsonArray messages = new JsonArray();
         JsonObject systemMessage = new JsonObject();
         systemMessage.addProperty("role", "system");
-        systemMessage.addProperty("content", "You are a helpful assistant");
-        messages.add(systemMessage);
+        systemMessage.addProperty("content", plugin.getConfig().getString("system_message"));
         JsonObject userMessage = new JsonObject();
         userMessage.addProperty("role", "user");
         userMessage.addProperty("content", request);
         messages.add(userMessage);
+        messages.add(systemMessage);
         jsonRequest.add("messages", messages);
 
         // Создаем HTTP-запрос
